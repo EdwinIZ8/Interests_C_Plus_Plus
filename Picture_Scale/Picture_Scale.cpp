@@ -10,31 +10,8 @@
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/imgproc.hpp>
 
-int main(int argc, char* argv[])
+int picture_scale(int argc, char* argv[])
 {
-    /* 方法一
-    // 输入图片宽度
-    int nWidth;
-    std::cout << "请输入图片宽度：" << std::endl;
-    std::cin >> nWidth;
-
-    for (int i = 1; i <= argc; i++) {
-        cv::Mat input, output;
-        // 打开图片
-        input = cv::imread(argv[i]);
-        int cols, rows;
-        cols = input.cols;
-        rows = input.rows;
-        // 缩放图片
-        cv::Size dsize = cv::Size(nWidth, (int)(nWidth * rows / cols));
-        cv::resize(input, output, dsize, 0, 0);
-        // 保存图片
-        cv::imwrite(argv[i], output);
-        // 调试信息
-        std::cout << argv[i] << "已保存为：" << nWidth << "×" << (int)(nWidth * rows / cols) << "像素。" << std::endl;
-    }
-    */
-    /* 方法二 */
     int nWidth;
     std::cout << "最多支持89张图片"
               << "请输入图片宽度（像素）：" 

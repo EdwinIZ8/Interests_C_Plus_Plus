@@ -90,7 +90,7 @@ void show() {
     cout << "  i角等于（″）：\t" << round(i * 100) / 100 << endl;
 }
 
-int main() {
+int calculate_i() {
     cout << "功能：用AI1BI2法，计算水准仪i角；\n"
          << "作者：张家馨。\n"
          << "说明：\n"

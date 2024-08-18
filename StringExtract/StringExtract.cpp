@@ -14,6 +14,7 @@ void usage()
 {
     std::cout << "程序：StringExtract" << std::endl
               << "功能：提取前缀和后缀之间的文字，然后保存在文件中。" << std::endl
+              << "用法：\n"
               << "\t1.输入 “./StringExtract 文件名”" << std::endl
               << "\t2.输入要提取文字的前缀；" << std::endl
               << "\t3.输入要提取文字的后缀；" << std::endl
@@ -52,7 +53,7 @@ std::vector<std::string> stringExtract(char* filename, std::string &prefix, std:
 }
 
 
-int main(int argc, char* argv[]) {
+int string_extract(int argc, char* argv[]) {
     if (argc == 2)
     {
         std::string prefix, suffix;
@@ -74,7 +75,10 @@ int main(int argc, char* argv[]) {
         outfile.close();
     }
     else
+    {
+        std::cout << "输入参数有误！" << std::endl;
         usage();
+    }
 
     return 0;
 }

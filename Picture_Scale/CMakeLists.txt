@@ -5,7 +5,7 @@ find_package(OpenCV REQUIRED)
 set(CMAKE_CXX_STANDARD 17)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(Picture_Scale main.cpp)
+add_executable(Picture_Scale Picture_Scale.cpp)
 target_link_libraries(Picture_Scale ${OpenCV_LIBS})
 
 # print
