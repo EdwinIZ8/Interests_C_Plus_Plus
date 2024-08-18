@@ -1,0 +1,6 @@
+突发奇想——想给Windows换个命令提示符和图形界面
+------------------------------------------
+
+1. 最近折腾了Hackintosh和Linux。给Ubuntu Server装了图形桌面，嫌Ubuntu自带的Terminal不好看，就自己安装了Guake；接着又觉得GNOME 3不顺眼，便用Tweak给Ubuntu换了个macOS主题。接着又换回Windows 10，这时我突然发现，原来cmd.exe就是Windows系统的Terminal，而explorer.exe就是Windows系统的桌面环境。
+
+2. 那么要是想换个桌面环境，只需将explorer.exe文件替换一下就行；要是想换个命令提示符呢？换个cmd.exe不就行了嘛。只不过Windows操作系统并不开源，所以并没有什么可替代的命令提示符或者桌面环境。要是自己开发命令提示符的话，肯定也是需要懂得一些Windows的系统调用；那要自己开发桌面环境呢，就需要懂得一些图形编程的知识，估计OpenGL比OpenCV要合适得多。有空研究一下GNOME、X11是用什么库开发的。
